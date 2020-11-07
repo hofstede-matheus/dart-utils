@@ -29,3 +29,11 @@ write(arg) {
 void printVar(List<dynamic> args) {
   args.forEach((arg) => print(arg));
 }
+
+/**
+   * alias for Random().nextInt(max)
+   * generates between (inclusive) min and max. Default values are 0, 100 respectively
+   * usage:
+   * print(rand(0, 2));
+*/
+int rand([int min = 0, int max = 100]) => min + Random().nextInt(++max - min);
