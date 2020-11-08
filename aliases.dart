@@ -37,4 +37,4 @@ void printVar(List<dynamic> args) {
    * usage:
    * print(rand(0, 2));
 */
-int rand([int min = 0, int max = 100]) => min + Random().nextInt(++max - min);
+int rand({int min = 0, int max = 100}) => min + Random().nextInt(++max - min);
